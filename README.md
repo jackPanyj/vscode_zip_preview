@@ -1,5 +1,5 @@
 # zip previewer
-
+Display the file name of a Zip file
 ## usage
 
 ### you need to choose a zip file, and right click
