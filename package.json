@@ -7,8 +7,13 @@
 		"vscode": "^1.33.0"
 	},
 	"categories": [
-		"Other"
+		"zip",
+		"preview"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jackPanyj/vscode_zip_preview"
+	},
 	"activationEvents": [
 		"onCommand:extension.zip_preview"
 	],
