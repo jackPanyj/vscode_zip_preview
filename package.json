@@ -1,0 +1,62 @@
+{
+	"name": "vscode-zip-preview",
+	"displayName": "vscode_zip_preview",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.zip_preview"
+	],
+	"publisher": "jackpanyj",
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.zip_preview",
+				"title": "preview a zip file"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceLangId == zip",
+					"command": "extension.zip_preview",
+					"group": "navigation"
+				}
+			]
+		},
+		"languages": [
+			{
+				"id": "zip",
+				"extensions": [
+					".zip"
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/adm-zip": "^0.4.32",
+		"@types/lodash.template": "^4.4.6",
+		"adm-zip": "^0.4.13",
+		"lodash.template": "^4.4.0"
+	}
+}
