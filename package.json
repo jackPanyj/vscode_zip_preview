@@ -1,8 +1,8 @@
 {
-	"name": "vscode-zip-preview",
-	"displayName": "vscode_zip_preview",
+	"name": "zip preview",
+	"displayName": "zip preview",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
