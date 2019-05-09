@@ -1,8 +1,8 @@
 {
 	"name": "zip-preview",
-	"displayName": "zip preview",
-	"description": "",
-	"version": "0.0.3",
+	"displayName": "Zip Preview",
+	"description": "Display the file name of a Zip file",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
