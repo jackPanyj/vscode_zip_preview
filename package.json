@@ -1,11 +1,12 @@
 {
-	"name": "zip preview",
+	"name": "zip-preview",
 	"displayName": "zip preview",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
+	"icon": "icon.png",
 	"categories": [
 		"Other"
 	],
